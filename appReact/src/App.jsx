@@ -5,9 +5,19 @@ import './App.css'
 
 
 function Greeting(){
-  return (<h2>Hello, welcome to the Vite + React app!</h2>);
+  return (<h2>Hello, welcome! Let's get starded!</h2>);
 }
+ function Header(){
+  return (
+  <header><h1>Introduction a React</h1>
+  
+  <img src="logo.jpg"  width="300" height="200" alt="React Logo" />
+  <h2>A la decouverte des premieres notions de React</h2>
+  
+  </header>
 
+);
+}
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +25,7 @@ function App() {
   return (
     <>
       <Greeting />
+      <Header />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
