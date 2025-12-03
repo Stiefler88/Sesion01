@@ -18,6 +18,9 @@ function Greeting(){
 
 );
 }
+function MainContent(){
+  return ( <h3> Ici, nous afficherons des informations interessantes</h3>
+    );}
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,6 +29,7 @@ function App() {
     <>
       <Greeting />
       <Header />
+      <MainContent />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
