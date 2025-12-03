@@ -19,9 +19,13 @@ function Greeting(){
 );
 }
 function MainContent(){
-  return ( <h3> Ici, nous afficherons des informations interessantes</h3>
+  return ( <p> Ici, nous afficherons des informations interessantes</p>
     );}
-
+function Footer(){
+  return ( <footer>
+    <p align="center">Tous droits réservés - Paul Steven</p>
+    </footer>
+    );}
 function App() {
   const [count, setCount] = useState(0)
 
@@ -30,6 +34,7 @@ function App() {
       <Greeting />
       <Header />
       <MainContent />
+      
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -50,6 +55,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <Footer />
     </>
   )
 }
